@@ -6,26 +6,11 @@
 /*   By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 18:37:01 by hnayel            #+#    #+#             */
-/*   Updated: 2026/01/29 17:00:55 by hnayel           ###   ########.fr       */
+/*   Updated: 2026/01/29 18:00:39 by hnayel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/push_swap.h"
-
-// void	pick_sort(t_data *data)
-// {
-// 	if (data->nb_args == 2)
-// 		swap_two_first(data->a);
-// 	else if (data->nb_args == 3)
-// 		sort_three(data);
-// 	else if (data->nb_args == 4)
-// 		sort_four(data);
-// 	else if (data->nb_args == 5)
-// 		sort_five(data);
-// 	else
-// 		sort(data);
-// }
-
 
 t_node	*add_new(int nb, int index)
 {
@@ -183,15 +168,6 @@ void	sort_four(t_data *data)
 	push_b_to_a(data);
 }
 
-
-// void	sort_four(t_data *data);
-// void	sort_three(t_data *data);
-// int	find_max(t_node *node);
-// int	find_min(t_node *node);
-// void	put_first_to_last(t_node **list);
-// void	swap_two_first(t_node *list);
-// void	add_front(t_node **list, t_node *new);
-// void	pick_sort(t_data *data);
 void	put_last_to_first(t_node **list)
 {
 	t_node	*head;

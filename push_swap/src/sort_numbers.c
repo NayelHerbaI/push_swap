@@ -6,7 +6,7 @@
 /*   By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 14:00:42 by naherbal          #+#    #+#             */
-/*   Updated: 2026/01/29 17:05:48 by hnayel           ###   ########.fr       */
+/*   Updated: 2026/01/29 17:59:25 by hnayel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,6 @@
 
 void	sort_numbers(t_data *data)
 {
-	// if (data->nb_args == 2)
-	// 	sort_two_numbers(data);
-	// if (data->nb_args == 3)
-	// 	sort_three_numbers(data);
-	// if (data->nb_args == 5)
-	// 	sort_five_numbers(data);
-	// printf("args : %d\n", data->nb_args);
 	if (data->nb_args == 2)
 	{
 		swap_two_first(data->a);
