@@ -6,7 +6,7 @@
 #    By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/21 20:28:19 by naherbal          #+#    #+#              #
-#    Updated: 2026/01/29 16:56:42 by hnayel           ###   ########.fr        #
+#    Updated: 2026/01/29 17:57:13 by hnayel           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ SRC	=	src/main.c						\
 		src/ft_atoi.c					\
 		src/functions.c					\
 		src/sec_functions.c				\
-		print_list.c					\
 		src/swap.c						\
 		src/push.c						\
 		src/rotate.c					\
