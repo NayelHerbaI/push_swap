@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naherbal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 14:31:44 by naherbal          #+#    #+#             */
-/*   Updated: 2024/01/08 16:39:28 by naherbal         ###   ########.fr       */
+/*   Updated: 2026/01/29 16:48:45 by hnayel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,13 +41,11 @@ int	main(int ac, char **av)
 	setup(data, ac, av);
 	while (is_list_sorted(data) == 1)
 	{
-		print_list(data);
 		sort_numbers(data);
 		data->compare_bin *= 2;
 		if (data->nb_args == 4)
 			break ;
 	}
-	print_list(data);
 	free_data(data);
 	return (0);
 }

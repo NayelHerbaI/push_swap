@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naherbal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 17:52:56 by naherbal          #+#    #+#             */
-/*   Updated: 2023/11/02 13:15:57 by naherbal         ###   ########.fr       */
+/*   Updated: 2026/01/29 17:00:59 by hnayel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,20 @@ int					smaller_and_bigger_number_pos(t_data *data, char c);
 void				zero_one_pos(t_data *data, int small);
 void				three_four_pos(t_data *data, int small);
 void				kyle_function(t_data *data, int small);
+
+void	sort_four(t_data *data);
+void	sort_three(t_data *data);
+int	find_max(t_node *node);
+int	find_min(t_node *node);
+void	put_first_to_last(t_node **list);
+void	swap_two_first(t_node *list);
+void	add_front(t_node **list, t_node *new);
+void	pick_sort(t_data *data);
+void	put_min_max_up(t_data *data);
+void	sort_five(t_data *data);
+void	put_last_to_first(t_node **list);
+void	push_a_to_b(t_data *data);
+void	push_b_to_a(t_data *data);
+int	is_sorted(t_node *a);
 
 #endif

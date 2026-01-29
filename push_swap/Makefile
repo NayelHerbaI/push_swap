@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: naherbal <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/21 20:28:19 by naherbal          #+#    #+#              #
-#    Updated: 2023/11/22 12:45:30 by naherbal         ###   ########.fr        #
+#    Updated: 2026/01/29 16:56:42 by hnayel           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC	=	src/main.c						\
 		src/bitwise_alg.c				\
 		src/ft_split.c					\
 		src/second_sort_five_numbers.c	\
+		src/pick_sort.c	\
 
 OBJ		=	$(SRC:.c=.o)
 

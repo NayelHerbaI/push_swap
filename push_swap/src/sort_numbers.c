@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_numbers.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: naherbal <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hnayel <hnayel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 14:00:42 by naherbal          #+#    #+#             */
-/*   Updated: 2023/11/22 17:30:38 by naherbal         ###   ########.fr       */
+/*   Updated: 2026/01/29 17:05:48 by hnayel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,25 @@
 
 void	sort_numbers(t_data *data)
 {
+	// if (data->nb_args == 2)
+	// 	sort_two_numbers(data);
+	// if (data->nb_args == 3)
+	// 	sort_three_numbers(data);
+	// if (data->nb_args == 5)
+	// 	sort_five_numbers(data);
+	// printf("args : %d\n", data->nb_args);
 	if (data->nb_args == 2)
-		sort_two_numbers(data);
-	if (data->nb_args == 3)
-		sort_three_numbers(data);
-	if (data->nb_args == 5)
-		sort_five_numbers(data);
-	if (data->nb_args > 5)
+	{
+		swap_two_first(data->a);
+		exit(1);
+	}
+	else if (data->nb_args == 3)
+		sort_three(data);
+	else if (data->nb_args == 4)
+		sort_four(data);
+	else if (data->nb_args == 5)
+		sort_five(data);
+	else if (data->nb_args > 5)
 		bitwise_alg(data);
 }
 
